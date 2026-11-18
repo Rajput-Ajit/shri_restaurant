@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery | Hotel Shree, Jalna</title><link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script><script src="assets/tw.js"></script><link rel="stylesheet" href="assets/style.css"></head>
+<body><div id="hero"></div>
+<section class="max-w-[90rem] mx-auto px-6 md:px-12 py-24"><div class="columns-2 md:columns-3 gap-5 [&>*]:mb-5" id="gal"></div></section>
+<script src="assets/site.js"></script><script>
+$('#hero').innerHTML=heroHTML('lobby.jpg','Gallery','A look inside Hotel Shree.');
+const G=['lobby','room-king','salmon','corridor','pizza','room-standard','service','biryani','bar-dining','pasta','room-twin','breakfast','buffet','room-suite'];
+$('#gal').innerHTML=G.map(g=>`<button data-lb="assets/${g}.jpg" class="reveal zoom frame overflow-hidden block w-full"><img src="assets/${g}.jpg" alt="Hotel Shree photo" class="w-full" loading="lazy"></button>`).join('');observe();lightbox();
+</script></body></html>

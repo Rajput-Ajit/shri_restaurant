@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stay | Hotel Shree, Jalna</title><link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script><script src="assets/tw.js"></script><link rel="stylesheet" href="assets/style.css"></head>
+<body><div id="hero"></div>
+<section class="max-w-[90rem] mx-auto px-6 md:px-12 py-28">
+ <div class="max-w-xl mx-auto text-center reveal mb-28"><div class="orn mb-8">&#10022;</div><p class="font-serif text-3xl md:text-4xl leading-snug text-champ">Air-conditioned rooms with good beds, soft light and quiet corridors.</p></div>
+ <div id="list" class="space-y-32"></div></section>
+<section class="py-32 text-center bg-coal border-t border-gold/20 reveal"><h2 class="font-serif font-light text-5xl md:text-6xl">Plan your stay</h2><p class="mt-5 text-ivory/70">Call or message the front desk for rates and availability.</p><div class="mt-9 flex flex-wrap justify-center gap-4"><a href="book.html" class="btn fill">Book a room</a><a href="contact.html" class="btn">Enquire now</a></div></section>
+<script src="assets/site.js"></script><script>
+$('#hero').innerHTML=heroHTML('corridor.jpg','Stay','Six room types, one standard of care.');
+const R=[['Standard Room','room-standard.jpg','Compact and bright, with a large TV and a work shelf. A good choice for a short business stay.',['Air-conditioned','Smart TV','Wi-Fi','Work shelf']],
+['Deluxe King','room-king.jpg','A king bed, a desk and a mini fridge, with enough room to spread out on longer stays.',['King bed','Work desk','Mini fridge','Wi-Fi']],
+['Twin Room','room-twin.jpg','Two beds with a tea kettle and bedside lamps. Easy for colleagues and friends travelling together.',['Two beds','Tea kettle','Bedside lamps','Wi-Fi']],
+['Premium Room','room-premium.jpg','Warm lighting, twin beds and a wall-mounted TV for a more relaxed evening.',['Twin beds','Smart TV','Air-conditioned','Wardrobe']],
+['Family Suite','room-suite.jpg','Two large beds, wood panelling and a ceiling fan, with space for the whole family.',['Sleeps 4','Large TV','Wardrobe','Wi-Fi']],
+['Deluxe Twin','room-deluxe.jpg','A bright room with a window view and a seating corner to read or work.',['Window view','Seating','Wi-Fi','TV']]];
+$('#list').innerHTML=R.map((r,i)=>`<article class="grid md:grid-cols-12 gap-12 items-center reveal"><div class="md:col-span-7 frame zoom overflow-hidden aspect-[16/11] ${i%2?'md:order-2':''}"><img src="assets/${r[1]}" alt="${r[0]}" class="w-full h-full object-cover" loading="lazy"></div>
+<div class="md:col-span-5 ${i%2?'md:order-1 md:pr-10':'md:pl-10'}"><h2 class="font-serif font-light text-5xl md:text-6xl">${r[0]}</h2><p class="mt-6 text-ivory/75 leading-loose">${r[2]}</p>
+<ul class="mt-8 grid grid-cols-2 gap-y-3 text-sm text-champ">${r[3].map(x=>`<li class="flex items-center gap-3"><span class="text-gold">&#10022;</span>${x}</li>`).join('')}</ul><a href="book.html" class="btn mt-10">Check availability</a></div></article>`).join('');observe();
+</script></body></html>

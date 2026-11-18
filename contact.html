@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Hotel Shree, Jalna</title><link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script><script src="assets/tw.js"></script><link rel="stylesheet" href="assets/style.css"></head>
+<body><div id="hero"></div>
+<section class="max-w-[90rem] mx-auto px-6 md:px-12 py-28 grid md:grid-cols-2 gap-20">
+ <div class="reveal"><h2 class="font-serif font-light text-5xl md:text-6xl">Hotel Shree</h2>
+  <address class="not-italic mt-8 text-lg leading-loose text-ivory/80">Bar &middot; Restaurant &middot; Lodging<br>Jalna-Ambad Road, Laxmikant Nagar,<br>Indewadi, Jalna, Maharashtra</address>
+  <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hotel+Shree+Indewadi+Jalna" class="btn mt-8">Get directions</a>
+  <form id="enq" class="mt-16 grid gap-8 max-w-md"><h3 class="font-serif text-4xl">Send an enquiry</h3>
+   <label><span class="lbl">Name</span><input class="field" id="en" required></label><label><span class="lbl">Phone</span><input class="field" type="tel" id="ep" required></label><label><span class="lbl">Message</span><textarea class="field resize-none" rows="3" id="em"></textarea></label><button class="btn fill">Send enquiry</button></form></div>
+ <div class="reveal frame overflow-hidden min-h-[420px] relative"><iframe title="Map" class="absolute inset-0 w-full h-full border-0 grayscale invert-[.9] contrast-[.9] hover:filter-none transition duration-700" loading="lazy" src="https://maps.google.com/maps?q=Indewadi%20Jalna&output=embed"></iframe></div></section>
+<script src="assets/site.js"></script><script>
+$('#hero').innerHTML=heroHTML('lobby.jpg','Contact','We would love to hear from you.');
+$('#enq').onsubmit=e=>{e.preventDefault();const t=`Hello Hotel Shree, I am ${$('#en').value} (${$('#ep').value}). ${$('#em').value}`;
+ if(CONFIG.whatsapp)open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(t)}`,'_blank');e.target.reset();toast('Thank you. We will get back to you shortly.')};
+</script></body></html>

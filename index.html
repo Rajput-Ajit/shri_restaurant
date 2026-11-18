@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bar · Restaurant · Lodging | Hotel Shree, Jalna</title><link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script><script src="assets/tw.js"></script><link rel="stylesheet" href="assets/style.css"></head>
+<body data-loader>
+<!-- HERO -->
+<section id="heroWrap" class="relative h-[100svh] min-h-[680px] overflow-hidden">
+ <video id="heroVid" class="vid" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg"><source src="assets/hero.mp4" type="video/mp4"></video>
+ <div class="absolute inset-0 bg-gradient-to-b from-ink/75 via-ink/30 to-ink"></div><div class="glow -left-20 top-10"></div>
+ <div id="heroContent" class="relative h-full max-w-[90rem] mx-auto px-6 md:px-12 flex flex-col justify-center items-start">
+  <p class="fade text-gold text-xs tracking-[.4em] uppercase mb-8" style="animation-delay:2s">Jalna, Maharashtra</p>
+  <h1 class="font-serif font-light leading-[.92] text-[clamp(3.4rem,10vw,9.5rem)]"><span class="line"><span style="animation-delay:2.1s">Where every</span></span><span class="line"><span class="italic text-champ" style="animation-delay:2.3s">stay is a</span></span><span class="line"><span style="animation-delay:2.5s">welcome.</span></span></h1>
+  <div class="fade mt-12 flex flex-wrap gap-5" style="animation-delay:3.2s"><a href="reserve.html" class="btn fill">Reserve a table</a><a href="rooms.html" class="btn">Explore rooms</a></div>
+ </div>
+ <div class="fade absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-[.65rem] tracking-[.35em] uppercase text-champ/70" style="animation-delay:3.6s">Scroll<i class="cue block w-px h-10 bg-gold"></i></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="overflow-hidden border-y border-gold/20 py-5 bg-coal"><div class="mq flex w-max gap-12 whitespace-nowrap font-serif text-3xl md:text-4xl text-champ/80">
+ <span>Bar</span><span class="text-gold">&#10022;</span><span>Restaurant</span><span class="text-gold">&#10022;</span><span>Lodging</span><span class="text-gold">&#10022;</span><span>Family dining</span><span class="text-gold">&#10022;</span><span>Room service</span><span class="text-gold">&#10022;</span>
+ <span>Bar</span><span class="text-gold">&#10022;</span><span>Restaurant</span><span class="text-gold">&#10022;</span><span>Lodging</span><span class="text-gold">&#10022;</span><span>Family dining</span><span class="text-gold">&#10022;</span><span>Room service</span><span class="text-gold">&#10022;</span></div></div>
+
+<!-- INTRO -->
+<section class="relative max-w-[90rem] mx-auto px-6 md:px-12 py-36 grid md:grid-cols-12 gap-16 items-center">
+ <div class="md:col-span-5"><div class="orn mb-8 max-w-xs reveal">&#10022;</div>
+  <h2 data-split class="font-serif font-light text-5xl md:text-7xl leading-[1.02]">A home on the Jalna-Ambad Road.</h2>
+  <p class="reveal mt-8 text-ivory/75 leading-loose max-w-md">Hotel Shree brings together comfortable lodging, a full-service restaurant and an evening bar. Come for a night, a family dinner or a celebration, and leave feeling looked after.</p>
+  <div class="reveal mt-12 flex gap-12 font-serif"><div><div class="text-6xl text-gold" data-n="3">0</div><div class="font-sans text-xs text-mute mt-2">Ways to enjoy</div></div><div><div class="text-6xl text-gold" data-n="6">0</div><div class="font-sans text-xs text-mute mt-2">Room types</div></div><div><div class="text-6xl text-gold" data-n="14">0</div><div class="font-sans text-xs text-mute mt-2">Dining tables</div></div></div>
+  <a href="dining.html" class="btn mt-12 reveal">Discover dining</a></div>
+ <div class="md:col-span-7 grid grid-cols-12 gap-5">
+  <div class="col-span-7" data-par=".06"><div class="tilt frame zoom overflow-hidden aspect-[3/4]"><img src="assets/lobby.jpg" alt="Hotel lobby" class="w-full h-full object-cover"></div></div>
+  <div class="col-span-5 pt-24" data-par="-.08"><div class="tilt frame zoom overflow-hidden aspect-[3/5]"><img src="assets/breakfast.jpg" alt="Breakfast" class="w-full h-full object-cover"></div></div></div>
+</section>
+
+<!-- EXPANDING VIDEO -->
+<section id="expand" class="relative h-[240vh]"><div class="sticky top-0 h-screen overflow-hidden bg-ink">
+ <div id="expandBox" class="absolute inset-0" style="clip-path:inset(14% 22% 14% 22% round 24px)">
+  <video class="vid" autoplay muted loop playsinline preload="metadata" poster="assets/housekeeping.jpg"><source src="assets/housekeeping.mp4" type="video/mp4"></video>
+  <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-ink/30"></div>
+  <div id="exText" class="absolute inset-x-0 bottom-0 p-8 md:p-16 max-w-3xl opacity-0"><h2 class="font-serif font-light text-5xl md:text-8xl leading-none">Rest, made easy.</h2><p class="mt-5 text-champ/80 max-w-md">Fresh linen, soft light and a team that quietly gets every detail right.</p><a href="rooms.html" class="btn mt-8">View rooms</a></div></div></div></section>
+
+<!-- PANELS -->
+<section class="grid md:grid-cols-3 border-y border-gold/20">
+ <a href="rooms.html" class="panel group relative h-[80vh] overflow-hidden zoom border-b md:border-b-0 md:border-r border-gold/20"><img src="assets/room-king.jpg" alt="" class="absolute inset-0 w-full h-full object-cover"><video class="vid pv" muted loop playsinline preload="none" poster="assets/housekeeping.jpg"><source src="assets/housekeeping.mp4" type="video/mp4"></video><div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent group-hover:from-ink/70 transition duration-700"></div><div class="absolute bottom-0 p-10"><h3 class="font-serif text-6xl stroke group-hover:translate-x-2 transition duration-500">Stay</h3><p class="mt-3 text-champ/80 max-w-xs md:opacity-0 md:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">Quiet, comfortable rooms.</p><span class="inline-block mt-4 text-gold text-xs tracking-[.3em] uppercase">View rooms</span></div></a>
+ <a href="dining.html" class="panel group relative h-[80vh] overflow-hidden zoom border-b md:border-b-0 md:border-r border-gold/20"><img src="assets/biryani.jpg" alt="" class="absolute inset-0 w-full h-full object-cover"><video class="vid pv" muted loop playsinline preload="none" poster="assets/room-service.jpg"><source src="assets/room-service.mp4" type="video/mp4"></video><div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent group-hover:from-ink/70 transition duration-700"></div><div class="absolute bottom-0 p-10"><h3 class="font-serif text-6xl stroke group-hover:translate-x-2 transition duration-500">Dine</h3><p class="mt-3 text-champ/80 max-w-xs md:opacity-0 md:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">Indian, continental and more.</p><span class="inline-block mt-4 text-gold text-xs tracking-[.3em] uppercase">View menu</span></div></a>
+ <a href="reserve.html" class="panel group relative h-[80vh] overflow-hidden zoom"><img src="assets/bar-dining.jpg" alt="" class="absolute inset-0 w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent group-hover:from-ink/70 transition duration-700"></div><div class="absolute bottom-0 p-10"><h3 class="font-serif text-6xl stroke group-hover:translate-x-2 transition duration-500">Unwind</h3><p class="mt-3 text-champ/80 max-w-xs md:opacity-0 md:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">Evenings at the bar lounge.</p><span class="inline-block mt-4 text-gold text-xs tracking-[.3em] uppercase">Reserve a table</span></div></a>
+</section>
+
+<!-- DINING FEATURE with video -->
+<section class="relative py-36 overflow-hidden"><div class="glow right-0 top-20"></div>
+ <div class="max-w-[90rem] mx-auto px-6 md:px-12 grid md:grid-cols-12 gap-16 items-center">
+  <div class="md:col-span-7 order-2 md:order-1 frame overflow-hidden aspect-[16/10] reveal tilt"><video class="vid" autoplay muted loop playsinline preload="none" poster="assets/room-service.jpg"><source src="assets/room-service.mp4" type="video/mp4"></video></div>
+  <div class="md:col-span-5 order-1 md:order-2"><h2 data-split class="font-serif font-light text-5xl md:text-7xl leading-[1.02]">Served with care, every time.</h2><p class="reveal mt-8 text-ivory/75 leading-loose max-w-md">From a quiet breakfast to a late dinner, our team brings the table to you. Book your own table and arrive to find it ready.</p><a href="reserve.html" class="btn fill mt-10 reveal">Reserve a table</a></div></div></section>
+
+<!-- DISH STRIP -->
+<section class="overflow-hidden pb-28"><div class="mqr flex w-max gap-6 px-3">
+ <img src="assets/biryani.jpg" class="h-72 w-auto frame" alt=""><img src="assets/pizza.jpg" class="h-72 w-auto" alt=""><img src="assets/salmon.jpg" class="h-72 w-auto" alt=""><img src="assets/pasta.jpg" class="h-72 w-auto" alt=""><img src="assets/breakfast.jpg" class="h-72 w-auto" alt="">
+ <img src="assets/biryani.jpg" class="h-72 w-auto" alt=""><img src="assets/pizza.jpg" class="h-72 w-auto" alt=""><img src="assets/salmon.jpg" class="h-72 w-auto" alt=""><img src="assets/pasta.jpg" class="h-72 w-auto" alt=""><img src="assets/breakfast.jpg" class="h-72 w-auto" alt=""></div></section>
+
+<!-- SCAN & ORDER -->
+<section class="relative py-36 bg-coal border-y border-gold/20 overflow-hidden"><div class="glow -right-20 top-0"></div>
+ <div class="max-w-[90rem] mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-20 items-center">
+  <div><h2 data-split class="font-serif font-light text-5xl md:text-7xl leading-[1.02]">Scan. Browse. Order.</h2><p class="reveal mt-8 text-ivory/75 leading-loose max-w-md">Every table and room has a QR code. Scan it to open our digital menu card with your table number already filled in, then send your order to the kitchen.</p>
+   <div class="reveal mt-10 flex flex-wrap gap-4"><a href="scan.html" class="btn fill">Scan a QR code</a><a href="menu.html" class="btn">Open the menu</a><a href="book.html" class="btn">Book a room</a></div></div>
+  <div class="relative flex justify-center reveal"><div class="scanbox frame w-72 h-72 bg-ink border border-gold/30 grid place-content-center"><div class="sline"></div>
+   <svg width="150" height="150" viewBox="0 0 21 21" shape-rendering="crispEdges" fill="#e9d9b4"><path d="M0 0h7v7H0zM14 0h7v7h-7zM0 14h7v7H0zM1 1v5h5V1zM15 1v5h5V1zM1 15v5h5v-5zM2 2h3v3H2zM16 2h3v3h-3zM2 16h3v3H2zM9 0h2v2H9zM8 3h2v2H8zM11 4h2v2h-2zM9 7h3v2H9zM0 9h2v2H0zM3 9h2v2H3zM6 8h2v3H6zM13 8h3v2h-3zM17 9h4v2h-4zM9 11h2v3H9zM12 12h3v2h-3zM16 13h2v3h-2zM19 14h2v2h-2zM9 16h3v2H9zM13 17h2v4h-2zM16 18h3v2h-3zM9 19h2v2H9z"/></svg></div></div></div></section>
+
+<!-- CTA with video -->
+<section class="relative py-48 text-center overflow-hidden"><video class="vid opacity-50" autoplay muted loop playsinline preload="none" poster="assets/hero-poster.jpg"><source src="assets/corridor.mp4" type="video/mp4"></video><div class="absolute inset-0 bg-ink/65"></div>
+ <div class="relative max-w-3xl mx-auto px-6"><h2 data-split class="font-serif font-light text-6xl md:text-8xl leading-none">Your table is waiting.</h2><p class="reveal mt-7 text-ivory/80">Choose a date, a time and your own table in under a minute.</p><a href="reserve.html" class="btn fill mt-12 reveal">Reserve a table</a></div></section>
+<script src="assets/site.js"></script><script src="assets/home.js"></script></body></html>
